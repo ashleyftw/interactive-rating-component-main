@@ -1,0 +1,81 @@
+@use 'scss/reset' as *;
+@use 'scss/colors' as *;
+@use 'scss/typography' as *;
+@use 'scss/spacer' as *;
+
+
+body {
+    font-family: $ff;
+    background-color: $clr-neutral-vdk-bl;
+    color: $clr-neutral-lt-grey;
+    display: grid;
+    place-content: center;
+    font-weight: $fw-base;
+};
+
+.rating-card {
+    background-color: $clr-neutral-dk-bl;
+    margin: $mar-xl;
+    padding: $pad-lg;
+    border-radius: 1.5em;
+}
+
+.rating-icon {
+    background-color: $clr-neutral-md-bl;
+    margin: $mar-base 0;
+    padding: $pad-md;
+    border-radius: 50%;
+    width: 100%;
+    max-width: 75px;
+}
+
+.rating-q {
+    color: $clr-neutral-wt;
+    font-size: $fs-xl;
+    font-weight: $fw-thin;
+    margin: $mar-base 0;
+}
+
+.rating-text {
+    font-size: $fs-md;
+}
+
+.ratings {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    margin: $mar-lg 0;
+
+    div {
+        display: inline-block;
+        text-align: center;
+        font-weight: $fw-bold;
+        font-size: $fs-md;
+        background-color: $clr-neutral-md-bl;
+        padding: $pad-md;
+        border-radius: 50%;
+    }
+}
+
+.rating-btn {
+    display: grid;
+
+    button {
+        background-color: $clr-primary;
+        color: $clr-neutral-wt;
+        padding: $pad-base $pad-base*2;
+        border-radius: 2em;
+        border-style: none;
+        font-size: $fs-md;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+    }
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+};
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
