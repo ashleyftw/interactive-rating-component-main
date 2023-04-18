@@ -2,12 +2,26 @@
 $ff: 'Overpass', sans-serif;
 
 //font-size (paragraph)
-$fs-base: 15px;
-$fs-md: 1.5rem;
-$fs-lg: 2rem;
-$fs-xl: 2.5rem;
+$fs: (
+    base: 15px,
+    md: 1.5rem,
+    lg: 1.75rem,
+    xl: 2rem,
+    xxl: 2.5rem
+);
 
 //font-weight
-$fw-thin: 300;
-$fw-base: 400;
-$fw-bold: 700;
+$fw: (
+    thin: 300,
+    base: 400,
+    bold: 700
+);
+
+:root {
+    @each $fontsize, $size in $fs {
+        --fs-#{$fontsize}:#{$size};
+    }
+    @each $fontweight, $weight in $fw {
+        --fw-#{$fontweight}: #{$weight};
+    }
+};
