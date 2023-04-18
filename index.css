@@ -167,11 +167,10 @@ body {
 
 .results-card {
   text-align: center;
-  margin-bottom: 3em;
 }
 .results-card img {
   margin: 0 auto;
-  padding: 2em;
+  padding: 0.75em;
 }
 .results-card button {
   color: hsl(25, 97%, 53%);
@@ -185,6 +184,10 @@ body {
   color: hsl(0, 0%, 100%);
   margin: 0.5em;
   font-size: var(--fs-lg);
+}
+
+.hidden {
+  display: none;
 }
 
 .attribution {
